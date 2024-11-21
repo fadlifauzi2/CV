@@ -3,28 +3,41 @@ import pp from "../assets/pp.jpg"
 
 const Profile = () => {
     return (
-        <Card className="max-w-full m-5">
-            <div className="flex justify-between px-4 pt-4 flex-wrap">
-                <div className="flex flex-col items-center pb-10">
-                    <img
-                        alt="Profile Image"
-                        height="96"
-                        src={pp}
-                        width="96"
-                        className="mb-3 rounded-full shadow-lg"
-                    />
-                    <h3 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Rasya Bayu Pratama</h3>
-                    <span className="text-sm text-gray-500 dark:text-gray-400">Student</span>
-                </div>
-                <div className="coloumn py-4 sm:text-center md:text-left">
-                    <h4 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Phone +62 817-7044-8619</h4>
-                    <h5>Email: rasyabayu857@gmail.com</h5>
-                    <h5>Github: https://github.com/bayuu15</h5>
-                    <h5>Instagram: instagram.com/shmoocc</h5>
-                </div>
+        <div className="min-h-screen flex items-center justify-center">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 p-6">
+          {/* Left Section */}
+          <div className="text-left">
+            <p className="text-xl font-medium text-gray-900">Hello There</p>
+            <h1 className="text-4xl md:text-5xl font-bold mt-2">
+              My Name is
+              <br />
+              <span className="text-black">Rasya Bayu Pratama</span>
+            </h1>
+            <p className="text-xl mt-4 font-medium text-gray-900">I’m a 
+              <span className="font-bold"> Student</span>
+            </p>
+          </div>
+  
+          {/* Right Section */}
+          <div className="relative">
+            <div className="w-72 h-72 md:w-26 md:h-96 rounded-full overflow-hidden shadow-xl">
+              <img
+                src={pp}
+                alt="Artwork"
+                className="w-full h-full object-cover"
+              />
             </div>
-        </Card>
-    )
-}
+          </div>
+        </div>
+      </div>
+
+        
+
+    );
+  };
+  
+        
+    
+
 
 export default Profile
